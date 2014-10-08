@@ -1,0 +1,16 @@
+{
+    "name": "エラーをみやすくするやつ",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "某謎フレームワークのエラーを見やすくする",
+    "content_scripts": [
+        {
+            "matches": ["http://www.vorkers.com/*", "https://www.vorkers.com/*",
+                        "http://www.vorkers.com.local/*", "https://www.vorkers.com.local/*",
+                        "http://*.elasticbeanstalk.com/*", "https://*.elasticbeanstalk.com/*"],
+            "js": ["jquery.min.js","script.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
+
