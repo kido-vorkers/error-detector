@@ -12,7 +12,7 @@ $(function () {
             .css('background', '#e9e9ef')
             .css('border-radius', '14px 0 0 14px')
             .css('box-shadow', '0 0 14px #000')
-            .html('<span style="color: red; font-weight: bold; font-size: 25px;">' + m + '</span><br>' +
+            .html('<span style="color: red; font-weight: bold; font-size: 25px; word-break: break-all;">' + m + '</span><br>' +
                   '<span style="line-height: 100%; font-size: 10px;">File: ' + f + '<br>Line: ' + l + '</span>')
             .hide()
             .appendTo($(document.body))
